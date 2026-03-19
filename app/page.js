@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-slate-100 selection:bg-indigo-500/30">
+    <main className="min-h-screen bg-neutral-950 text-white selection:bg-indigo-500/30">
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 overflow-hidden">
         <div className="mx-auto max-w-3xl px-6 text-center">
@@ -16,12 +16,12 @@ export default function Home() {
               Your Face. Your Insights.<br/>
               <span className="text-indigo-400">MirrorMate Intelligence.</span>
             </h1>
-            <p className="mt-8 text-lg md:text-xl text-slate-400 leading-relaxed">
+            <p className="mt-8 text-lg md:text-xl text-neutral-300 leading-relaxed">
               MirrorMate uses AI to surface visible health, wellness, and skin patterns earlier than you ever thought possible. Professional-grade diagnostics in your pocket.
             </p>
             <div className="mt-10 flex gap-4 justify-center">
               <button className="rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white hover:bg-indigo-500 transition-all">Start Your Scan</button>
-              <button className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition">See Clinical Studies</button>
+              <button className="rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/20 transition">See Clinical Studies</button>
             </div>
           </motion.div>
         </div>
@@ -52,7 +52,7 @@ export default function Home() {
       </section>
       
       {/* Footer */}
-      <footer className="border-t border-white/10 py-12 text-center text-sm text-slate-500">
+      <footer className="border-t border-white/10 py-12 text-center text-sm text-neutral-500">
         <p>&copy; {new Date().getFullYear()} Forever Beauty. All rights reserved.</p>
       </footer>
     </main>
@@ -63,7 +63,7 @@ function FeatureItem({ title, desc }) {
   return (
     <div className="group">
       <h3 className="text-2xl font-semibold text-white mb-3 group-hover:text-indigo-400 transition-colors">{title}</h3>
-      <p className="text-lg text-slate-400 leading-relaxed">{desc}</p>
+      <p className="text-lg text-neutral-300 leading-relaxed">{desc}</p>
     </div>
   );
 }
